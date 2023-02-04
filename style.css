@@ -175,6 +175,10 @@ body{
     transition: all 0.4s;
     background: radial-gradient(circle, rgba(195,48,48,0.855) 0%, rgba(166,170,41,0.855) 49%, rgba(54,147,55,0.855) 100%);
 }
+.socialgit:hover{
+    transition: all 0.4s;
+    background: rgba(255, 255, 255, 0.352);
+}
 .socialt:hover{
     background: rgba(36, 36, 209, 0.464);
 }
