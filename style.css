@@ -1,0 +1,241 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    /* transition: all 0.4s; */
+}
+body{
+    background-color: rgba(0, 0, 0, 0.875);  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 7s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 2s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 6s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration:6s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-180vh) rotate(720deg);
+        opacity: 0.6;
+        border-radius: 50%;
+    }
+
+}
+
+.content{
+    position: sticky;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 7vw;
+}
+.content img{
+    margin: auto;
+    width: 200px;
+    border-radius: 100px;
+}
+.btnn a{
+    color: aliceblue;
+    text-decoration: none;
+    /* font-size: 1.5vw; */
+    font-size: 23px;
+}
+.btnn{
+    width: 65vw;
+    margin: auto;
+    margin-top: 1vw;
+    padding: 1vw;
+    background: #131313bd;
+    border-radius: 15px;
+    border:1px black solid;
+    transition: all 0.4s;
+}
+.btnn:hover{
+    transition: all 0.4s;
+}
+.sociali:hover{
+    background: linear-gradient(25deg, rgb(3, 28, 255,0.584) 0%,rgba(255, 3, 251, 0.584) 23%, rgba(253,29,29,0.584) 56%, rgba(252,176,69,0.584) 100%);
+}
+.socialp:hover{
+    background: rgba(255, 57, 57, 0.212);
+}
+.sociall:hover{
+    background: rgba(0, 0, 255, 0.464);
+}
+.socialg:hover{
+    transition: all 0.4s;
+    background: radial-gradient(circle, rgba(195,48,48,0.855) 0%, rgba(166,170,41,0.855) 49%, rgba(54,147,55,0.855) 100%);
+}
+.socialt:hover{
+    background: rgba(36, 36, 209, 0.464);
+}
+.links{
+    color: aliceblue;
+}
+.links h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    margin: 1vw 1vw 3vw 1vw;
+}
+.links h1 span{
+    font-size: 20px;
+    word-spacing: 19px;
+}
+.links h3{
+    margin: 2vw 1vw 0.6vw 1vw;
+}
+
+.footer{
+   color: white;
+   margin-top: 28vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .circles{
+        height: 120%;
+    }
+    .content{
+        margin-top: 7vw;
+    }
+    .content img{
+        width: 150px;
+    }
+    .btnn a{
+        font-size: 20px;
+    }
+    .btnn{
+        width: 78vw;
+        margin-top: 3vw;
+        padding: 2vw;
+    }
+    .links h3{
+        margin: 10vw 1vw 6vw 1vw;
+    }
+    .links h1{
+        font-size: 40px;
+        margin: 1vw 1vw 10vw 1vw;
+    }
+    .footer{
+        color: white;
+        margin-top: 10vh;
+     }
+  }
+  body::-webkit-scrollbar {
+    width: 0.6em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
