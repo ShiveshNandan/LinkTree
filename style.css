@@ -134,28 +134,28 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 10vw;
+    margin-top: 7vw;
 }
 .content img{
     margin: auto;
-    width: 200px;
+    width: 150px;
     border-radius: 400px;
     border: 5px solid white;
-    box-shadow: 0px 0px 50px -5px blue;
+    box-shadow: 0px 0px 50px -5px rgba(255, 255, 255, 0.455);
 }
 .links a{
     color: aliceblue;
     text-decoration: none;
     /* font-size: 1.5vw; */
-    font-size: 23px;
+    font-size: 18px;
 }
 .btnn{
-    width: 65vw;
+    width: 45vw;
     margin: auto;
     margin-top: 1vw;
     padding: 1vw;
     background: #131313bd;
-    border-radius: 15px;
+    border-radius: 40px;
     border:1px black solid;
     transition: all 0.4s;
 }
@@ -187,11 +187,11 @@ body{
 }
 .links h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 45px;
+    font-size: 40px;
     margin: 1vw 1vw 3vw 1vw;
 }
 .links h1 span{
-    font-size: 20px;
+    font-size: 16px;
     word-spacing: 19px;
 }
 .links h3{
@@ -200,7 +200,7 @@ body{
 
 .footer{
    color: white;
-   margin-top: 20vh;
+   margin-top: 23vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -208,25 +208,25 @@ body{
         height: 120%;
     }
     .content{
-        margin-top: 7vw;
+        margin-top: 10vw;
     }
     .content img{
-        width: 150px;
+        width: 100px;
     }
-    .btnn a{
-        font-size: 20px;
+    .links a{
+        font-size: 15px;
     }
     .btnn{
-        width: 78vw;
-        margin-top: 3vw;
+        width: 70vw;
+        margin-top: 2.5vw;
         padding: 2vw;
     }
     .links h3{
-        margin: 10vw 1vw 6vw 1vw;
+        margin: 3vw 1vw 1vw 1vw;
     }
     .links h1{
-        font-size: 40px;
-        margin: 1vw 1vw 10vw 1vw;
+        font-size: 30px;
+        margin: 0vw 1vw 8vw 1vw;
     }
     .footer{
         color: white;
